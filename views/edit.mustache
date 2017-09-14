@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Edit Page</title>
+</head>
+
+<body>
+  <h1 id="editTop">Please Edit Your Profile Here</h1>
+  <div class="main">
+    <form class="" action="/users/{{user.id}}" method="post">
+      <div class="">
+        <label for="">Name</label>
+        <input type="text" name="name" value="{{user.name}}">
+      </div>
+      <div class="">
+        <label for="">Avatarl URL</label>
+        <input type="url" name="avatar" value="{{user.avatar}}">
+      </div>
+      <div class="">
+        <label for="">Email</label>
+        <input type="email" name="email" value="{{user.email}}">
+      </div>
+      <div class="">
+        <label for="">Phone Number</label>
+        <input type="text" name="phone" value="{{user.phone}}">
+      </div>
+      <div class="">
+        <label for="">University</label>
+        <input type="text" name="university" value="{{user.university}}">
+      </div>
+      <div class="">
+        <label for="">Company</label>
+        <input type="text" name="company" value="{{user.company}}">
+      </div>
+      <div class="">
+        <label for="">job</label>
+        <input type="text" name="job" value="{{users.skills}}">
+      </div>
+      <div class="">
+        <label for="">Skills</label>
+        <input type="text" name="skills" value="{{user.skills}}">
+      </div>
+      <div class="">
+        <input type="submit" name="" value="Edit Robot">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

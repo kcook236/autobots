@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="">
+    {{#user}}
+      <div class="">
+        <img src="{{avatar}}" alt="">
+      </div>
+      <div class="">
+        <h1>{{name}}</h1>
+        <h4> {{job}}, {{Company}}</h4>
+      </div>
+      <div class="">
+        <h3>{{email}} | {{phone}}</h3>
+      </div>
+      <div class="">
+        <h3>Edumacation: {{university}}</h3>
+      </div>
+      <div class="">
+        <h3>Skills: {{skills}}</h3>
+      </div>
+      <div class="">
+        <a href="/users/{{_id}}/edit">Edit</a>
+      </div>
+      <div class="">
+        <a href="/users/{{_id}}/delete">Delete</a>
+      </div>
+    {{/user}}
+  </div>
+
+</body>
+
+</html>

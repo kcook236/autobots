@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Robot LinkedIn</h1>
+  <div class="newUser">
+    <a href="/newUser">New Robots Register Here</a>
+  </div>
+  <br>
+  <div class="">
+    {{#users}}
+      <div class="">
+        <a href="/users/{{_id}}"><img class = "avatars" src="{{avatar}}"></a>
+        <a href="/users/{{_id}}">{{name}}</a>
+        <h4 class="jobs">
+          {{#job}}{{.}}, {{/job}}
+          {{^job}}<h4 class = "umemployed">Available for Hire</h4> {{/job}}
+        {{company}}
+        </h4>
+      </div>
+    {{/users}}
+  </div>
+</body>
+
+</html>
